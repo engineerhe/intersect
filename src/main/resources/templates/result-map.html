@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <title>Analysis Result Viewer</title>
+    <link rel="stylesheet" href="scripts/ThirdParty/openlayers5.3/ol.css">
+    <link rel="stylesheet" href="scripts/ThirdParty/layui/css/layui.css">
+    <link rel="stylesheet" href="css/result-map.css">
+    <script src="scripts/config.js"></script>
+    <script src="scripts/ThirdParty/openlayers5.3/ol.js"></script>
+    <script src="scripts/ThirdParty/layui/layui.js"></script>
+</head>
+<body>
+<div id="map" class="map"></div>
+<div class="analysis-res">
+<table class="layui-hide" id="analysis-res-table" lay-filter="test"></table>
+</div>
+<div id="mouse-position"></div>
+</body>
+</body>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var features = [[${features}]] ;
+    /*]]>*/
+</script>
+<script src="scripts/map.result.js"></script>
+</html>

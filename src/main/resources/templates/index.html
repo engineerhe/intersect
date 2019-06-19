@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <title>Map Viewer</title>
+    <link rel="stylesheet" href="scripts/ThirdParty/openlayers5.3/ol.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/config.js"></script>
+    <script src="scripts/ThirdParty/openlayers5.3/ol.js"></script>
+</head>
+<body>
+<div id="map" class="map"></div>
+<div id="mouse-position"></div>
+</body>
+</body>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var pointsArr = [[${pointsArr}]] ;
+    /*]]>*/
+</script>
+<script src="scripts/map.export.js"></script>
+</html>
